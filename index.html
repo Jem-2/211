@@ -3,112 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOP 요약 노트</title>
-    <style>
-        /* 스타일링 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        #content {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .week-content {
-            display: none;
-        }
-        .example-content {
-            margin-top: 10px;
-        }
-    </style>
+    <title>OOP</title>
 </head>
 <body>
-    <div id="content">
-        <button onclick="showWeek('w1')">Week 1</button>
-        <button onclick="showWeek('w2')">Week 2</button>
-        <button onclick="showWeek('w3')">Week 3</button>
-        <button onclick="showWeek('w4')">Week 4</button>
-        <button onclick="showWeek('w5')">Week 5</button>
-        <button onclick="showWeek('w6')">Week 6</button>
-        
-        <div id="w1" class="week-content">
-            <h2>Week 1</h2>
-            <p>Java basics 내용</p>
-            <button onclick="showExample('w1')">Example 보기</button>
-            <div id="w1-example" class="example-content" style="display: none;">
-                <p>여기에 Week 1의 예시 내용을 추가할 수 있어요.</p>
-            </div>
-        </div>
-
-        <div id="w2" class="week-content">
-            <h2>Week 2</h2>
-            <p>Week 2의 내용</p>
-            <button onclick="showExample('w2')">Example 보기</button>
-            <div id="w2-example" class="example-content" style="display: none;">
-                <p>여기에 Week 2의 예시 내용을 추가할 수 있어요.</p>
-            </div>
-        </div>
-
-        <!-- 나머지 주차 추가 -->
-        <div id="w3" class="week-content">
-            <h2>Week 3</h2>
-            <p>Week 3의 내용</p>
-            <button onclick="showExample('w3')">Example 보기</button>
-            <div id="w3-example" class="example-content" style="display: none;">
-                <p>여기에 Week 3의 예시 내용을 추가할 수 있어요.</p>
-            </div>
-        </div>
-
-        <div id="w4" class="week-content">
-            <h2>Week 4</h2>
-            <p>Week 4의 내용</p>
-            <button onclick="showExample('w4')">Example 보기</button>
-            <div id="w4-example" class="example-content" style="display: none;">
-                <p>여기에 Week 4의 예시 내용을 추가할 수 있어요.</p>
-            </div>
-        </div>
-
-        <div id="w5" class="week-content">
-            <h2>Week 5</h2>
-            <p>Week 5의 내용</p>
-            <button onclick="showExample('w5')">Example 보기</button>
-            <div id="w5-example" class="example-content" style="display: none;">
-                <p>여기에 Week 5의 예시 내용을 추가할 수 있어요.</p>
-            </div>
-        </div>
-
-        <div id="w6" class="week-content">
-            <h2>Week 6</h2>
-            <p>Week 6의 내용</p>
-            <button onclick="showExample('w6')">Example 보기</button>
-            <div id="w6-example" class="example-content" style="display: none;">
-                <p>여기에 Week 6의 예시 내용을 추가할 수 있어요.</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function showWeek(week) {
-            // 모든 주차 내용 숨기기
-            var weekContents = document.getElementsByClassName('week-content');
-            for (var i = 0; i < weekContents.length; i++) {
-                weekContents[i].style.display = 'none';
-            }
-            // 해당 주차의 내용 보이기
-            document.getElementById(week).style.display = 'block';
-        }
-
-        function showExample(week) {
-            var exampleContent = document.getElementById(week + '-example');
-            // 해당 주차의 예시 내용 보이거나 숨기기
-            if (exampleContent.style.display === 'none') {
-                exampleContent.style.display = 'block';
-            } else {
-                exampleContent.style.display = 'none';
-            }
-        }
-    </script>
+    <h1>OOP</h1>
+    <p>Note for OOP</p>
+    <ul>
+        <li><a href="m1.html">M1</a></li>
+        <li><a href="m2.html">M2</a></li>
+    </ul>
 </body>
 </html>
