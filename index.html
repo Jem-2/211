@@ -6,24 +6,21 @@
     <title>OOP</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jalnan&display=swap">
     <style>
-        /* 스타일링 */
+        /* 공통 스타일 */
         body {
-            font-family: 'Jalnan', sans-serif; /* 웹폰트 '잘난체'를 기본으로 사용 */
+            font-family: 'Jalnan', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
         }
         .sidebar {
-            width: 200px;
-            background-color: #e6e6e6; /* 로즈쿼츠 세레니티 색상으로 수정 */
-            color: #333; /* 텍스트 컬러 변경 */
+            background: linear-gradient(to bottom, #f5b8b8, #a5b8f5); /* 로즈쿼츠 세레니티 그라데이션 */
+            color: #333;
             position: fixed;
             top: 0;
-            left: 0;
             bottom: 0;
-            padding-top: 50px;
             overflow-y: auto;
-            transition: 0.3s;
+            transition: width 0.3s;
         }
         .sidebar a {
             padding: 10px 20px;
@@ -33,17 +30,27 @@
             transition: 0.3s;
         }
         .sidebar a:hover {
-            background-color: #ccc; /* 호버 시 조금 더 어두운 색상으로 변경 */
+            background-color: #ccc;
         }
         .content {
-            margin-left: 200px; /* 사이드바와 겹치지 않도록 컨텐츠를 이동시킵니다. */
+            margin-left: 200px;
             padding: 20px;
+        }
+
+        /* 미디어 쿼리 */
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 100px;
+            }
+            .content {
+                margin-left: 100px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="sidebar">
-        <a href="index.html">Main Page</a> <!-- 메인 페이지로 돌아가는 링크 추가 -->
+        <a href="index.html">Main Page</a>
         <a href="#" onclick="toggleMenu('m1')">M1</a>
         <div id="m1SubMenu" style="display: none;">
             <a href="w1.html">Week 1</a>
@@ -60,7 +67,6 @@
     <div class="content">
         <h1>OOP</h1>
         <h2>Note for OOP</h2>
-        <!-- 본문 내용 -->
     </div>
 
     <script>
