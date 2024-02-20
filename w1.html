@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+    <style>
+        /* 스타일링 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .week-content {
+            margin-top: 20px;
+        }
+        .example-content {
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Week 1</h2>
+        <p>Java basics 내용</p>
+        <button onclick="showExample()">Example 보기</button>
+        <div id="example" class="example-content">
+            <p>여기에 Week 1의 예시 내용을 추가할 수 있어요.</p>
+        </div>
+        <div class="week-content">
+            <p>공부하자!</p>
+        </div>
+    </div>
+
+    <script>
+        function showExample() {
+            var exampleContent = document.getElementById('example');
+            // 예시 내용 보이거나 숨기기
+            if (exampleContent.style.display === 'none') {
+                exampleContent.style.display = 'block';
+            } else {
+                exampleContent.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
